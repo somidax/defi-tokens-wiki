@@ -55,6 +55,18 @@
         },
         {
             "chainId": 1,
+            "name": "SOMIDAX",
+            "symbol": "SMDX",
+            "address": "0x7e8539d1e5cb91d63e46b8e188403b3f262a949b",
+            "decimals": 18,
+            "logoURI": "https://tokens.dharma.io/assets/0x7e8539d1e5cb91d63e46b8e188403b3f262a949b/icon.png",
+            "tags": [
+                "Token",
+                "defi"
+            ]
+        },
+        {
+            "chainId": 1,
             "name": "Wrapped Ether",
             "symbol": "WETH",
             "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
