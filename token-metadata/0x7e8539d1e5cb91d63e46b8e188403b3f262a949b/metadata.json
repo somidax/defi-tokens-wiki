@@ -3,23 +3,5 @@
     "symbol": "SMDX",
     "address": "0x7e8539d1e5cb91d63e46b8e188403b3f262a949b",
     "decimals": 18,
-    "dharmaVerificationStatus": "VERIFIED",
-    "description": "SOMIDAX is offering a decentralized social interactive marketplace service platform that utilizes blockchain technology to create a new business model for social P2P interaction as well as buying and selling of products and service.",
-    "socialLinks": [
-        {
-            "type": "Twitter",
-            "value": "https://twitter.com/somidax"
-        },
-        {
-            "type": "Website",
-            "value": "https://somidax.net"
-        },
-        {
-            "type": "bitcointalk",
-            "value": "https://bitcointalk.org/index.php?topic=5238861.0"
-        }
-    ],
-    "tags": [
-        "defi",            
-    ]
+    "dharmaVerificationStatus": "VERIFIED"
 }
