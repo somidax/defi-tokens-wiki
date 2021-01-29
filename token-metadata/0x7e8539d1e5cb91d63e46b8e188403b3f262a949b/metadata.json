@@ -3,5 +3,24 @@
     "symbol": "SMDX",
     "address": "0x7e8539d1e5cb91d63e46b8e188403b3f262a949b",
     "decimals": 18,
-    "dharmaVerificationStatus": "VERIFIED"
+    "dharmaVerificationStatus": "VERIFIED",
+    "description": "Compound is an algorithmic money market protocol on Ethereum that lets users earn interest or borrow assets against collateral. Anyone can supply assets to Compound's liquidity pool and immediately begin earning continuously-compounding interest. Rates adjust automatically based on supply and demand.",
+    "socialLinks": [
+        {
+            "type": "Twitter",
+            "value": "https://twitter.com/somidax"
+        },
+        {
+            "type": "Website",
+            "value": "https://somidax.net"
+        },
+        {
+            "type": "Reddit",
+            "value": "https://reddit.com/u/somidax"
+        }
+    ],
+    "tags": [
+        "defi",
+        ]
 }
+
