@@ -1,7 +1,6 @@
 const fs = require("fs");
 const web3 = require("web3-utils");
 const Ajv = require("ajv");
-const ImageSize = require("image-size");
 
 const metadataSchema = require("../../schemas/metadata.json");
 const { isValidSize, isValidDimension } = require("../../utils");
@@ -48,6 +47,17 @@ describe("metadata.json", () => {
                             expect(valid).toBe(true);
                         });
 
+                        it("should be able to be decoded from base 64 format", () => {
+                            let buffer = new Buffer(JSON.stringify(metadata));
+                            const base64String = buffer.toString("base64");
+            
+                            buffer = new Buffer(base64String, "base64");
+            
+                            const json = JSON.parse(buffer.toString("ascii"));
+            
+                            expect(JSON.stringify(metadata)).toEqual(JSON.stringify(json));
+                        })
+
                         it("should only have valid fields", () => {
                             const fields = Object.keys(metadata);
                             expect(fields.every(field => VALID_METADATA_FIELDS.includes(field))).toBe(true);
@@ -59,7 +69,7 @@ describe("metadata.json", () => {
                         })
 
                         if (metadata.dharmaVerificationStatus) {
-                            it("should have a valid status", () => {
+                            it.skip("should have a valid status", () => {
                                 expect(VALID_VEFICATION_STATUSES.includes(metadata.dharmaVerificationStatus)).toBe(true);
                             })
                         }
