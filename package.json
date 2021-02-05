@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-env": "^7.12.11",
     "ajv": "^6.12.5",
     "babel-jest": "^26.3.0",
     "jest": "^26.4.2",
